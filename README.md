@@ -4,7 +4,7 @@ Prototyping with [React](http://facebook.github.io/react/), [Redux](http://redux
 
 Current requirement is for desktop web browsers for data visualisation applications so design is intended for small screens or mobile devices.
 
-Demo: [https://rrgql.jsx.nz](rrgql.jsx.nz)
+[Demo](https://rrgql.jsx.nz)
 
 ## Tooling
 
