@@ -1,0 +1,15 @@
+{
+  "authService": {
+    "endpointL": "http://localhost:9876",
+    "endpoint": "http://asgard01.telstranz.com:9874",
+    "authenticatePath": "/authenticate/callback?url=",
+    "devToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJwb3N0Z3JhcGhxbCIsInN1YiI6InB3ZCIsInJvbGUiOiJhc2FfdXNlciIsImV4cCI6MTUzMDQwMzIwMCwiaWF0IjoxNDk3OTk1Njk4fQ.TLnID7WtcqW76UJUAnX4hTbZTuZve5wOmcpNvAxv71Y",
+    "revokePath": "/logout"
+  },
+  "auiService": {
+    "endpoint": "http://asgard01.telstranz.com:3020",
+    "endpointL": "http://localhost:3020",
+    "endpointDocker": "http://aui_graphql:3020",
+    "path": "/graphql"
+  }
+}

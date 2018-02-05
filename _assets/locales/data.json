@@ -1,0 +1,16 @@
+{ "en": {
+  "containers.Workspace.ContextMenu.Header.Item1": "Header Menu 1",
+  "containers.Workspace.ContextMenu.Header.Item5": "サブメニュー5",
+  "containers.Workspace.layouts.Layout.Filter1": "Filter 1",
+  "containers.Workspace.modals.close": "閉じる[x]",
+  "containers.Workspace.layouts.View.Filter1": "Filter 1",
+  "views.Workspace.Header": "Workspace Header",
+  "views.Workspace.Header.Modal": "Modal",
+  "views.Workspace.App.Footer": "アプリのフッター",
+  "views.Test.ContextMenu.Header.Item1": "Header Menu 1",
+  "views.Test.ContextMenu.Header.Item5": "Sub Menu 5",
+  "views.Test.Intl.welcome-inline": "Hello {name}, you have {unreadCount, number} {unreadCount, plural, one {message} other {messages}}, at {date}",
+  "views.Test.Intl.greeting": "Hello, {name}! you have {unreadCount, number} {unreadCount, plural, one {message} other {messages}}, at {date, date}",
+  "views.Test.Modal.logMessage": "ログメッセージ...",
+  "views.Test.Modal.close": "Close [x]"
+} }

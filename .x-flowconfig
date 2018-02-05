@@ -1,0 +1,10 @@
+[ignore]
+
+[include]
+<PROJECT_ROOT>/src/.*
+
+[libs]
+# <PROJECT_ROOT>/flow-typed/
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore

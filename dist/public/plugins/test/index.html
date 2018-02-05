@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plugin Layout</title>
+    <style>
+        html, body {
+            overflow: hidden;
+            height: 100%;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        .main {
+            height: 100%;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    </style>
+    <script type="text/javascript" src="vendor/vtable.js"></script>
+</head>
+<body>
+<div class="main">
+    <div id="content"></div>
+</div>
+<script>
+  function onAction(params) {
+    console.info('Plugin onAction: ', params);
+
+    window.vtable({
+      elemId: 'content',
+      name: 'Virtual Table',
+      mapper: params.mappers.table.table,
+      filters: params.filters,
+      data: [
+      {
+        "id": "ad38341b-4af0-436c-90f2-9b8abf8c7ebd",
+        "type": "traffic",
+        "icon": "/assets/icons/black/alarm.png",
+        "score": "14.68",
+        "status": 16,
+        "text1": "Username",
+        "text2": 1502410647518,
+        "text3": 16,
+        "total1": 7493,
+        "total2": 13
+      },
+      {
+        "id": "1579a734-006d-4651-9198-cea8183e6339",
+        "type": "periodicity",
+        "icon": "/assets/icons/black/enter.png",
+        "score": "13.14",
+        "status": 15,
+        "text1": "MAC Address",
+        "text2": 1502410667222,
+        "text3": 15,
+        "total1": 5712,
+        "total2": 7
+      },
+      {
+        "id": "86305e99-26a9-464d-8791-f7395434dd75",
+        "type": "domain login",
+        "icon": "/assets/icons/black/bubble.png",
+        "score": "12.90",
+        "status": 7,
+        "text1": "IP Address",
+        "text2": 1502410709145,
+        "text3": 7,
+        "total1": 8174,
+        "total2": 15
+      },
+      {
+        "id": "74ee4d31-49d6-4e5e-97cf-c2e034c1f612",
+        "type": "host interaction",
+        "icon": "/assets/icons/black/camera.png",
+        "score": "10.90",
+        "status": 2,
+        "text1": "Domain Name",
+        "text2": 1502410669263,
+        "text3": 2,
+        "total1": 6808,
+        "total2": 14
+      },
+      {
+        "id": "05cc0e99-7668-4b5b-903b-7b45ff2ff650",
+        "type": "host interaction",
+        "icon": "/assets/icons/black/camera.png",
+        "score": "7.20",
+        "status": 4,
+        "text1": "MAC Address",
+        "text2": 1502410628103,
+        "text3": 4,
+        "total1": 4646,
+        "total2": 8
+      },
+      {
+        "id": "3a48494d-d2ed-4cf7-9b84-6bdfcbc9f840",
+        "type": "host interaction",
+        "icon": "/assets/icons/black/camera.png",
+        "score": "4.23",
+        "status": 12,
+        "text1": "MAC Address",
+        "text2": 1502410624539,
+        "text3": 12,
+        "total1": 5300,
+        "total2": 9
+      },
+      {
+        "id": "7b228652-3b55-4c8d-bf8e-a3d52dd1689c",
+        "type": "traffic",
+        "icon": "/assets/icons/black/alarm.png",
+        "score": "2.83",
+        "status": 14,
+        "text1": "IP Address",
+        "text2": 1502410676724,
+        "text3": 14,
+        "total1": 6614,
+        "total2": 5
+      },
+      {
+        "id": "5bb43ef0-dc14-48a4-bbd4-28db2ac8b4ee",
+        "type": "user interaction",
+        "icon": "/assets/icons/black/user.png",
+        "score": "2.62",
+        "status": 3,
+        "text1": "Domain Name",
+        "text2": 1502410653182,
+        "text3": 3,
+        "total1": 6773,
+        "total2": 9
+      },
+      {
+        "id": "ea0032fc-a746-4be3-ad5c-f6b73447fc16",
+        "type": "domain login",
+        "icon": "/assets/icons/black/bubble.png",
+        "score": "2.19",
+        "status": 5,
+        "text1": "Username",
+        "text2": 1502410705749,
+        "text3": 5,
+        "total1": 303,
+        "total2": 4
+      },
+      {
+        "id": "25ddad58-056a-440e-93cb-6e655011c612",
+        "type": "behaviour",
+        "icon": "/assets/icons/black/apple.png",
+        "score": "1.54",
+        "status": 0,
+        "text1": "Username",
+        "text2": 1502410625473,
+        "text3": 0,
+        "total1": 7237,
+        "total2": 3
+      }
+    ],
+      callback: function () {
+        console.log('Table Loaded');
+      },
+      clickItem: function(params) {
+        console.log('Click Item', params);
+      },
+      selectItem: function(params) {
+        console.log('Selected Items', params);
+      }
+    });
+  }
+</script>
+</body>
+</html>

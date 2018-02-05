@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>RRGQL</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96">
+    <style>
+        html, body, #root {
+            height: 100%;
+            overflow: hidden;
+        }
+        #spinner:not(:required) {
+            position: fixed;
+            width: 24px;
+            height: 24px;
+            top: 50%;
+            left: 50%;
+            margin: -12px 0 0 -12px;
+            border: 2px solid #747474;
+            border-radius: 12px;
+            border-right-color: transparent;
+            animation: spinner 1125ms infinite linear;
+        }
+        @keyframes spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <base href="/">
+</head>
+<body>
+<div id="root"><div id="spinner"></div></div>
+<div id="portal"></div>
+<script src="require.js"></script>
+<script src="app.js"></script>
+<script>appRequireConfig()</script>
+</body>
+</html>

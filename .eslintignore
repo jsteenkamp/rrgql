@@ -1,0 +1,3 @@
+# these should pass but it can be useful to
+# ignore these test files when hacking on an idea
+# src/views/Test/*

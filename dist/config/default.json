@@ -1,0 +1,22 @@
+{
+  "express": {
+    "host": "localhost",
+    "port": "3000"
+  },
+  "jwt": {
+    "secret": "secret",
+    "expires": "3600"
+  },
+  "api": {
+    "path": "/api",
+    "version": "0"
+  },
+  "gql": {
+    "path": "/graphql"
+  },
+  "locales": [
+    "en",
+    "de",
+    "zh"
+  ]
+}

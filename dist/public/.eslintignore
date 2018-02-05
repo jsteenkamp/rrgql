@@ -1,0 +1,6 @@
+# we only want to lint our app files
+assets
+config
+# this will ignore vendor and plugins/**/vendor
+vendor
+require.js

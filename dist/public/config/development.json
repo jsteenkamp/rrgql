@@ -1,0 +1,16 @@
+{
+  "authService": {
+    "endpoint": "http://localhost:9874",
+    "endpointW": "https://waldorf.telstranz.com/authservice",
+    "authenticatePath": "/authenticate/callback?url=",
+    "revokePath": "/logout",
+    "devToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJwb3N0Z3JhcGhxbCIsInN1YiI6InB3ZCIsInJvbGUiOiJhc2FfdXNlciIsImV4cCI6MTUzMDQwMzIwMCwiaWF0IjoxNDk3OTk1Njk4fQ.TLnID7WtcqW76UJUAnX4hTbZTuZve5wOmcpNvAxv71Y",
+    "secret": "extra_special_secret_that_must_be_256_bits"
+  },
+  "auiService": {
+    "endpoint": "http://asgard01.telstranz.com:3020",
+    "endpointW": "https://waldorf.telstranz.com/aui",
+    "endpointL": "http://localhost:3020",
+    "path": "/graphql"
+  }
+}

@@ -1,0 +1,6 @@
+query ChannelsListQuery {
+   channels {
+     id
+     name
+   }
+ }
