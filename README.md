@@ -2,7 +2,7 @@
 
 Prototyping with [React](http://facebook.github.io/react/), [Redux](http://redux.js.org/), and [GraphQL](http://graphql.org/) using [Apollo](http://dev.apollodata.com/).
 
-Current requirement is for desktop web browsers for data visualisation applications so design is intended for small screens or mobile devices.
+Current requirement is for desktop web browsers for data visualisation applications so design is not intended for small screens or mobile devices.
 
 [Demo](https://rrgql.jsx.nz)
 
@@ -33,6 +33,10 @@ Uses [redux-saga](https://redux-saga.js.org/) for async (side-effects) in prefer
 With GraphQL and Apollo it is likey that Redux is not required at all. Components can their associated data queries can be collocated and Apollo client can handle caching and batching efficiently.
 
 Apollo can also provide a GraphQL query solution for access local storage and state resulting in a common and consistent way of providing data to components.
+
+GraphQL also makes it easier to create more modular and self-contained components by co-locating data queries within the associated component. This removes the need for redux/redux-saga to handle side-effects and provides additional benefits like caching.  
+
+[Query Components with Apollo](https://dev-blog.apollodata.com/query-components-with-apollo-ec603188c157)
  
 [Apollo React Client](http://dev.apollodata.com/react/) and [Apollo Server](http://dev.apollodata.com/tools/graphql-server/index.html) with [Express](https://expressjs.com/)
 
@@ -48,7 +52,7 @@ Routing to a Sign In form is available and disabled in the demo.
 
 ## CSS
 
-No Sass/SCSS pre-processor, use `styled-components`.
+No Sass/SCSS pre-processor, use [Styled Components](https://github.com/styled-components/styled-components), [Styled Theming](https://github.com/styled-components/styled-theming), and [Polished](https://github.com/styled-components/polished).
 
 [Forget Normalize/Reset](http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation) and use `base.css` that strips and adds styles where it makes sense to minimize the amount of declarations and overrides you will have to make later. 
 
