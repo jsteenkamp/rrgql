@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-//import {ApolloProvider} from 'react-apollo';
+import {ApolloProvider} from 'react-apollo';
 import {IntlProvider, addLocaleData} from 'react-intl';
 import {ThemeProvider} from 'styled-components';
 // import the required language locales here
@@ -10,16 +10,13 @@ import {configureStore} from './store/store';
 import Routes from './views/Routes';
 import theme from './styles';
 import localeData from '../_assets/locales/data.json';
-//import renderer from './app/render';
-// import {AppContainer} from 'react-hot-loader';
-
-import {ApolloProvider} from 'react-apollo';
 import {ApolloClient} from 'apollo-client';
 import {HttpLink} from 'apollo-link-http';
 import {InMemoryCache} from 'apollo-cache-inmemory';
+
+// we can use apollo link state to manage local data (replace redux 'globals')
 //import { ApolloLink } from 'apollo-link';
 //import { withClientState } from 'apollo-link-state';
-
 //const stateLink = withClientState({ resolvers, cache, defaults });
 
 // { uri: '/graphql' }
