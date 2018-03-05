@@ -11,7 +11,7 @@ export default () => {
   console.info('add', add(1, 2, 3));
   console.info('mult', mult(4, 5, 6));
 
-  // compose - each composed function must recieve the require number of params
+  // compose - each composed function must receive the require number of params
   console.info('addmult', am(1, 2, 3)(4, 5));
 
   return <h1>{am(1, 2, 3)(4, 5)}</h1>;

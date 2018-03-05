@@ -29,6 +29,7 @@ import D3 from './D3';
 import StyledSystem from './StyledSystem';
 import ReactTests from './ReactTests';
 import ErrorBoundary from './ErrorBoundary';
+import Siblings from './Siblings';
 
 const Container = styled.div`
   display: flex;
@@ -82,6 +83,7 @@ const Test = () => (
           <li><Link to="/test/tooltip">Tooltip</Link></li>
           <li><Link to="/test/virtual">Virtual Scroll</Link></li>
           <li><Link to="/test/worker">Web Worker</Link></li>
+          <li><Link to="/test/siblings">Sibling Components</Link></li>
         </ul>
       </Container>
     )}
@@ -126,6 +128,7 @@ export const Routes = () => (
     <Route path="/test/tooltip" component={Tooltip} />
     <Route path="/test/virtual" component={Virtual} />
     <Route path="/test/worker" component={Worker} />
+    <Route path="/test/siblings/:id?" component={Siblings} />
   </Switch>
 );
 

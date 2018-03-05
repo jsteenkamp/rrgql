@@ -18,6 +18,9 @@ define(['formatters/format'], function(format) {
           return params.item.id;
         },
       },
+      setTitle: function(params) {
+        return new Date().getTime();
+      },
       // include keys will be displayed, empty array [] = all non-excluded keys will be displayed
       include: [],
       // excluded data keys will not be displayed
